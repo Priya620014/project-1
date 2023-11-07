@@ -1,0 +1,131 @@
+/*.box1{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    position: absolute;
+    top: 50px;
+    left:30px;
+}
+
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(129, 19, 116);
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    z-index:1;
+}
+
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(60, 115, 44);
+    position: absolute;
+    top: 150px;
+    left: 60px;
+}
+.grid-container{
+    width:960px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: repeat(3,200px);
+    height:800px;
+
+}
+.item{
+    background-color: blue;
+    border:2px solid black;
+}
+.flex-container{
+    width:960px;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+}
+.fitem{
+     height:100px;
+     background-color: aquamarine;
+     border: 2px solid yellow;
+}
+.overflow-box{
+    height:300px;
+    width:600px;
+    background-color: chartreuse;
+    border:2px solid black;
+    overflow: auto;
+}*/
+*{
+    padding:0;
+    margin:0;
+
+}
+h1{
+    text-align: center;
+    padding:10px;
+    background-color: rgb(6, 21, 16);
+    color:white;
+}
+.grid-container1{
+    width: 960px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 150px 50px 700px 60px;
+    grid-template-areas:'header header header' 
+                         'menu menu menu'
+                         'left main right'
+                         'footer footer footer'
+}
+.header{
+    background-color: lightblue;
+    grid-area: header;
+}
+.menu{
+    background-color: lightpink;
+    grid-area: menu;
+}
+.left{
+    background-color: rgb(69, 90, 69);
+    grid-area: left;
+}
+.main{
+    background-color: lightcoral;
+    grid-area: main;
+}
+.right{
+    background-color: lightskyblue;
+    grid-area: right;
+}
+.footer{
+    background-color: lime;
+    grid-area: footer;
+}
+.grid-container2{
+    width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    grid-template-rows: repeat(2,min-content) minmax(300px,min-content);
+    grid-gap: 10px;
+}
+.box{
+    background-color: lightseagreen;
+    border: 5px solid black;
+}
+.grid-container3{
+width: 960px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(2,1fr);                                                                                   
+grid-template-rows: repeat(2,200px) ;
+grid-gap: 10px;
+grid-auto-rows: 100px;
+grid-auto-flow: column;
+grid-auto-columns: 1fr;
+}
+.item{
+background-color: lightseagreen;
+border: 5px solid black;
+}
